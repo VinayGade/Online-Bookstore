@@ -179,8 +179,7 @@ export const SearchBooksPage = () => {
                             <div className='mt-3'>
                                 <h5>Number of results: ({totalAmountOfBooks})</h5>
                             </div>
-                            <p>{indexOfFirstBook + 1} to {lastItem} of {totalAmountOfBooks} items:
-                            </p>
+                            <p>{indexOfFirstBook + 1} to {lastItem} of {totalAmountOfBooks} items:</p>
                             {books.map(book => (
                                 <SearchBook book={book} key={book.id} />
                             ))}
